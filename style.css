@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  line-height: 1.6;
+  color: #222;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero */
+.hero {
+  background-color: #0a1f44;
+  color: #fff;
+  padding: 80px 20px;
+}
+
+.hero-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-text h1 {
+  font-size: 2.6rem;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 1.3rem;
+  color: #4fd1c5;
+  margin-bottom: 8px;
+}
+
+.subtext {
+  font-size: 1rem;
+  color: #cbd5e0;
+  margin-bottom: 25px;
+}
+
+.hero-img img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #4fd1c5;
+}
+
+.btn-group {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background-color: #4fd1c5;
+  color: #0a1f44;
+  padding: 12px 26px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #38b2ac;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #4fd1c5;
+  color: #4fd1c5;
+}
+
+.btn-outline:hover {
+  background: #4fd1c5;
+  color: #0a1f44;
+}
+
+/* Sections */
+.section {
+  padding: 70px 20px;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.alt-bg {
+  background-color: #f4f6f8;
+}
+
+/* Services */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.service-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.15);
+  z-index: 10;
+  position: relative;
+  background-color: #0a1f44;
+}
+.service-card h3 {
+  color: #0a1f44;
+  margin-bottom: 12px;
+}
+
+.service-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.service-card li {
+  position: relative;
+  padding-left: 18px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 5px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.service-card li::before {
+  content: "•";
+  color: #4fd1c5;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+.service-card:hover h3,
+.service-card:hover li {
+  color: #4fd1c5;
+}
+
+/* Works */
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.work-card {
+  display: block;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #0a1f44;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+}
+
+.work-card:hover {
+  transform: translateY(-4px);
+}
+
+.works-note {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* Stats */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 25px;
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #0a1f44;
+}
+
+.stat-label {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* Industries / Other Services tags */
+.industries-grid,
+.other-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.industry-tag,
+.other-tag {
+  background: #0a1f44;
+  color: #fff;
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-size: 0.95rem;
+}
+
+/* Contact */
+#contact {
+  text-align: center;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #0a1f44;
+  color: #cbd5e0;
+  text-align: center;
+  padding: 25px 20px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .hero-flex {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .btn-group {
+    justify-content: center;
+  }
+}
