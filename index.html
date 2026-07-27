@@ -68,19 +68,114 @@
       </div>
     </div>
   </section>
-
-  <!-- SECTION 3: MY WORKS -->
-  <section id="work" class="section alt-bg">
+<!-- ALSO OFFERING: LEAD GENERATION -->
+  <section id="lead-gen" class="section alt-bg">
     <div class="container">
-      <h2>My Works</h2>
-      <div class="works-grid">
-        <a href="#" class="work-card">HVAC Google Search Ads</a>
-        <a href="#" class="work-card">Lead Tracking Setup (GHL)</a>
-        <a href="#" class="work-card">SEO Outreach Campaign</a>
+      <h2>Also Offering: Lead Generation</h2>
+      <p class="section-intro">
+        Beyond paid ads, I help businesses build outbound pipelines through 
+        targeted prospecting and outreach.
+      </p>
+      <div class="services-grid single-card-center">
+        <div class="service-card">
+          <h3>Lead Generation</h3>
+          <ul>
+            <li>Prospect Research</li>
+            <li>Decision-Maker Identification</li>
+            <li>LinkedIn Sales Navigator</li>
+            <li>Apollo.io Sourcing</li>
+            <li>Lead Magnet Creation</li>
+            <li>Cold Email Outreach & Validation</li>
+          </ul>
+        </div>
       </div>
-      <p class="works-note">*Links coming soon — currently building out case studies.</p>
     </div>
   </section>
+
+  <!-- SECTION 3: MY WORKS -->
+  <section id="work" class="section">
+    <div class="container">
+      <h2>My Works</h2>
+
+      <div class="works-grid">
+        <a href="javascript:void(0)" class="work-card" onclick="toggleCase('case-hvac')">HVAC Google Search Ads</a>
+        <a href="javascript:void(0)" class="work-card" onclick="toggleCase('case-leadgen')">B2B Lead Generation</a>
+        <a href="javascript:void(0)" class="work-card" onclick="toggleCase('case-ghl')">Lead Tracking Setup (GHL)</a>
+        <a href="javascript:void(0)" class="work-card" onclick="toggleCase('case-seo')">SEO Outreach Campaign</a>
+      </div>
+      <p class="works-note">*Click a project to see how it was built.</p>
+
+      <div class="case-study" id="case-hvac" style="display:none;">
+        <h3>TX HVAC: Google Search Ads Campaign Setup</h3>
+        <p>
+          Set up a Google Search Ads campaign from scratch for a residential HVAC client, 
+          with the goal of turning search traffic into real, qualified leads.
+        </p>
+        <p>
+          Using Google Ads' Keyword Planner, I built a keyword research framework covering 
+          50+ keywords across AC Repair and Heating Services, scoring each by search intent, 
+          competition level, trending growth, and bid cost. Keywords were prioritized into 
+          "Launch Now" versus "Scale Later" tiers, so ad spend targeted the highest-intent, 
+          most cost-effective searches first.
+        </p>
+        <h4>Keyword Research</h4>
+        <img src="keyword-research.png" alt="Keyword research sample table" class="case-study-img">
+        <h4>Search Ads Monitoring</h4>
+        <img src="search ads Monitoring.png" alt="Keyword research sample table" class="case-study-img">
+      </div>
+      <div class="case-study" id="case-leadgen" style="display:none;">
+        <h3>B2B Lead Generation: Structured Cold Outreach System</h3>
+        <p>
+          Most prospect lists are unfiltered, incomplete, or fail to target the right 
+          decision-makers, leading to wasted outreach and low response rates. The goal 
+          was to build a targeted B2B prospect list focused specifically on relevant 
+          decision-makers (CEOs, Founders, Managers) at companies worth targeting for 
+          cold outreach.
+        </p>
+        <p>
+          I used LinkedIn Sales Navigator to identify prospects by industry, job title, 
+          and company type, then manually reviewed each profile to confirm it matched 
+          the ideal customer profile. I used Apollo.io to enrich each contact, finding 
+          verified professional email addresses and validating additional details.
+        </p>
+        <p>
+          <strong>Result:</strong> 150 qualified B2B prospects, built and verified through 
+          LinkedIn Sales Navigator targeting, manual qualification, and Apollo.io enrichment, 
+          ready for cold outreach with accurate contact information.
+        </p>
+        <img src="blurred_leadgen_v2.png" alt="Sample B2B prospect database with sensitive fields blurred" class="case-study-img">
+        <p class="img-caption">Business names, contact names, emails, and website URLs blurred to protect client and prospect privacy.</p>
+      </div>
+
+      <div class="case-study" id="case-ghl" style="display:none;">
+        <h3>Lead Tracking Setup (GHL)</h3>
+        <p><em>Case study coming soon.</em></p>
+      </div>
+
+      <div class="case-study" id="case-seo" style="display:none;">
+        <h3>SEO Outreach Campaign</h3>
+        <p><em>Case study coming soon.</em></p>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+  function toggleCase(id) {
+    // Hide all case studies first
+    document.querySelectorAll('.case-study').forEach(function(el) {
+      if (el.id !== id) el.style.display = 'none';
+    });
+    // Toggle the clicked one
+    var target = document.getElementById(id);
+    if (target.style.display === 'none') {
+      target.style.display = 'block';
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } else {
+      target.style.display = 'none';
+    }
+  }
+  </script>
 
   <!-- SECTION 4: STATS -->
   <section id="stats" class="section">
