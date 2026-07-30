@@ -237,6 +237,15 @@ body {
   padding: 10px 22px;
   border-radius: 30px;
   font-size: 0.95rem;
+  transition: transform 0.2s ease, background-color 0.3s ease, color 0.3s ease;
+  cursor: default;
+}
+
+.industry-tag:hover,
+.other-tag:hover {
+  transform: scale(1.08);
+  background-color: #4fd1c5;
+  color: #0a1f44;
 }
 
 /* Contact */
