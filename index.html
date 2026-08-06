@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- UPDATED: Added meta description for SEO / search snippets -->
+  <meta name="description" content="Christian Mantana is a Paid Media Specialist running Google & Meta Ads for local service and e-commerce businesses, with a focus on diagnosing conversion tracking gaps other agencies miss.">
   <title>Christian Mantana | Paid Media Specialist</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -28,6 +30,9 @@
   </header>
 
   <!-- SECTION 2: WHAT I DO -->
+  <!-- UPDATED: Removed duplicate "Conversion Tracking Setup" + "Google Tag Manager Troubleshooting" from 
+       Google Ads (both live under Lead Tracking, and "Setup" was inaccurate — you audit, not set up). 
+       Removed "Ad Copywriting" from Meta Ads (that skill is HVAC/Google-specific, not Meta). -->
   <section id="services" class="section">
     <div class="container">
       <h2>What I Do</h2>
@@ -38,9 +43,7 @@
             <li>Search Campaigns</li>
             <li>YouTube Ads</li>
             <li>Keyword Research</li>
-            <li>Ad Copywriting</li>
-            <li>Conversion Tracking Setup</li>
-            <li>Google Tag Manager Troubleshooting</li>
+            <li>Ad Copywriting & Video Scripts</li>
             <li>Competitor Research (Google Ads Transparency Center)</li>
           </ul>
         </div>
@@ -50,7 +53,6 @@
             <li>Campaign Setup</li>
             <li>Ad Set Configuration</li>
             <li>Ad Creation & Monitoring</li>
-            <li>Ad Copywriting</li>
             <li>Competitor Research (Meta Ad Library)</li>
           </ul>
         </div>
@@ -68,7 +70,8 @@
       </div>
     </div>
   </section>
-<!-- ALSO OFFERING: LEAD GENERATION -->
+
+  <!-- ALSO OFFERING: LEAD GENERATION -->
   <section id="lead-gen" class="section alt-bg">
     <div class="container">
       <h2>Also Offering: Lead Generation</h2>
@@ -101,7 +104,6 @@
         <a href="javascript:void(0)" class="work-card" onclick="toggleCase('case-hvac')">HVAC Google Search Ads</a>
         <a href="javascript:void(0)" class="work-card" onclick="toggleCase('case-leadgen')">B2B Lead Generation</a>
         <a href="javascript:void(0)" class="work-card" onclick="toggleCase('case-ghl')">GHL Tracking Diagnosis</a>
-        <a href="javascript:void(0)" class="work-card" onclick="toggleCase('case-seo')">SEO Outreach Campaign</a>
         <a href="javascript:void(0)" class="work-card" onclick="toggleCase('case-ecom')">E-commerce Meta Ads Scaling</a>
         <a href="javascript:void(0)" class="work-card" onclick="toggleCase('case-hubspot')">HubSpot Pipeline Setup</a>
         <a href="javascript:void(0)" class="work-card" onclick="toggleCase('case-pmax')">Performance Max Campaign Build</a>
@@ -109,8 +111,12 @@
       </div>
       <p class="works-note">*Click a project to see how it was built.</p>
 
+      <!-- PRIVACY FIX: title changed from "TX HVAC: ..." to "HVAC Client: ..." — "TX HVAC" is the real 
+           internal campaign naming prefix visible in your actual dashboard screenshots, so using it as a 
+           literal case study label is more identifying than "an HVAC client," even though the images 
+           themselves are already blurred. Applied the same fix to case-pmax and case-crosstest below. -->
       <div class="case-study" id="case-hvac" style="display:none;">
-        <h3>TX HVAC: Google Search Ads Campaign Setup</h3>
+        <h3>HVAC Client: Google Search Ads Campaign Setup <span class="result-tag">580 clicks · $1.74 avg. CPC</span></h3>
         <p>
           Set up a Google Search Ads campaign from scratch for a residential HVAC client, 
           with the goal of turning search traffic into real, qualified leads.
@@ -123,10 +129,13 @@
         <h4>Keyword Research</h4>
         <img src="keyword-research.png" alt="Keyword research sample table" class="case-study-img">
         <h4>Search Ads Monitoring</h4>
-        <img src="search ads Monitoring.png" alt="Keyword research sample table" class="case-study-img">
+        <!-- NOTE: filename still has a space ("search ads Monitoring.png") — rename the actual file to 
+             remove the space and update this src to match, to avoid load issues on some setups -->
+        <img src="search ads Monitoring.png" alt="Search Ads performance dashboard" class="case-study-img">
       </div>
+
       <div class="case-study" id="case-leadgen" style="display:none;">
-        <h3>B2B Lead Generation: Structured Cold Outreach System</h3>
+        <h3>B2B Lead Generation: Structured Cold Outreach System <span class="result-tag">150 qualified prospects</span></h3>
         <p>
           Cold outreach only works if you're reaching the right people, and most 
           prospect lists fail before the first email even goes out. Incomplete data, 
@@ -152,8 +161,9 @@
         <img src="blurred_leadgen_v2.png" alt="Sample B2B prospect database with sensitive fields blurred" class="case-study-img">
         <p class="img-caption">Business names, contact names, emails, and website URLs blurred to protect client and prospect privacy.</p>
       </div>
+
       <div class="case-study" id="case-ecom" style="display:none;">
-        <h3>E-commerce Meta Ads: Campaign Management & Scaling</h3>
+        <h3>E-commerce Meta Ads: Campaign Management & Scaling <span class="result-tag">3.01x blended ROAS</span></h3>
         <p>
           I joined a digital marketing agency, and one of the accounts I got assigned to was an e-commerce client, working alongside my team leader. The Meta Ads campaigns were already running when I stepped in, several of them, all competing for the same budget. My part wasn't building from zero. It was watching closely, figuring out which campaigns were actually earning their spend, and acting on that.
         </p>
@@ -163,13 +173,21 @@
         <p>
           It's a different kind of work than setup. Less about launching something new, more about paying attention long enough to know what deserves more fuel and what doesn't.
         </p>
-        <img src="meta-ads-combined.png" alt="Meta Ads campaign management dashboard" class="case-study-img">
+        <img src="meta-ads-combined-blurred-final.png" alt="Meta Ads campaign management dashboard" class="case-study-img">
+        <h4>Result: Blended ROAS across all active campaigns</h4>
+        <p>
+          Real performance is tracked account-wide, not just per campaign. Across all 7 active 
+          campaigns, blended ROAS currently sits at <strong>3.01x</strong>, total ad spend of 
+          $18,307.46 generating roughly $55,079 in tracked revenue.
+        </p>
+        <img src="ecom-roas-blurred.png" alt="Blended ROAS across active Meta Ads campaigns" class="case-study-img">
       </div>
+
       <div class="case-study" id="case-ghl" style="display:none;">
-        <h3>GHL Conversion Tracking: Diagnosing a Tag Discrepancy <em>(In Progress)</em></h3>
+        <h3>HVAC Client: Conversion Tracking Diagnosis <em>(Resolved)</em> <span class="result-tag">2 confirmed conversions, redirect bug fixed</span></h3>
         <p>
           Sometimes the problem isn't the ads, it's what happens after the click. On a 
-          YouTube Ads campaign for this HVAC client, clicks were coming in and spend was 
+          Search Ads campaign for this HVAC client, clicks were coming in and spend was 
           climbing, but conversions stayed flat at zero. Meanwhile, over in GHL, real leads 
           were showing up. Names, phone numbers, real people filling out the form.
         </p>
@@ -177,15 +195,27 @@
           I started by checking the conversion setup directly in Google Ads, confirming the 
           Lead Form Submit action existed and had a valid conversion ID and label. Then I 
           went further, using Tag Assistant to check what was actually firing on the live 
-          page. That's where the gap showed up. Page View and Remarketing tags were firing 
-          fine, but the specific Lead Form Submit event never triggered.
+          page. Page View and Remarketing tags were firing fine, but the Lead Form Submit 
+          event never triggered.
         </p>
         <p>
-          This is still an open investigation. The leads are real and verified. The next 
-          step is figuring out why that specific event isn't wired up to fire on submit, 
-          likely somewhere in how the form action is configured inside GHL.
+          The root cause turned out to be simpler than it looked, and easy to miss. The Lead 
+          Form Submit tag was only set to fire on the actual thank-you page. But customers 
+          weren't landing there. The redirect URL after form submission was misconfigured, 
+          sending people to a generic thank-you page instead of the specific one the tag was 
+          watching. The form was working. The leads were real. The tag just never saw the 
+          page it was waiting for.
+        </p>
+        <p>
+          Once the redirect was corrected, the tag started firing as intended. The account 
+          has now recorded <strong>2 confirmed conversions</strong>, the first since tracking 
+          went live, with phone call tracking also integrated alongside it, so both form 
+          submissions and calls are properly attributed going forward.
         </p>
         <img src="ghl-tracking-diagnosis-full.png" alt="GHL to Google Ads conversion tracking diagnosis" class="case-study-img">
+        <h4>Before: Campaign spending and generating clicks, but the Lead Form Submit event never fired</h4>
+        <h4>After: Redirect fixed, tag now firing correctly. 2 confirmed conversions recorded, the first since tracking went live</h4>
+        <img src="conversion-confirmed-blurred.png" alt="Confirmed conversions after fixing the redirect URL" class="case-study-img">
       </div>
 
       <div class="case-study" id="case-hubspot" style="display:none;">
@@ -208,8 +238,9 @@
         </p>
         <img src="hubspot-pipeline.png" alt="HubSpot deal pipeline for lead tracking" class="case-study-img">
       </div>
+
       <div class="case-study" id="case-pmax" style="display:none;">
-        <h3>TX HVAC: Performance Max Campaign Build <em>(In Progress)</em></h3>
+        <h3>HVAC Client: Performance Max Campaign Build <em>(In Progress)</em></h3>
         <p>
           The Search campaign was already live and pulling in leads, but there was more 
           ground to cover. Performance Max runs across Search, Display, YouTube, Discover, 
@@ -247,8 +278,9 @@
         </p>
         <img src="pmax-build-story-v2.png" alt="Performance Max campaign build process" class="case-study-img">
       </div>
+
       <div class="case-study" id="case-crosstest" style="display:none;">
-        <h3>TX HVAC: Cross-Testing Creative Formats <em>(Live, Monitoring Results)</em></h3>
+        <h3>HVAC Client: Cross-Testing Creative Formats <em>(Live, Monitoring Results)</em></h3>
         <p>
           The account had two separate lanes running for this local business, one campaign 
           built around image ads, another built around video. Both were producing results 
@@ -293,25 +325,27 @@
   </script>
 
   <!-- SECTION 4: STATS -->
+  <!-- UPDATED: Removed "<1 Year Experience" as the lead stat — don't hide it, but don't headline it either. 
+       Reframed around real effort/output numbers instead. -->
   <section id="stats" class="section">
     <div class="container">
       <h2>By the Numbers</h2>
       <div class="stats-grid">
         <div class="stat">
-          <span class="stat-number">&lt;1</span>
-          <span class="stat-label">Year Experience</span>
+          <span class="stat-number">50+</span>
+          <span class="stat-label">Keywords Researched & Scored</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">150+</span>
+          <span class="stat-label">Qualified B2B Prospects Sourced</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">8</span>
+          <span class="stat-label">Campaigns & Systems Built or Diagnosed</span>
         </div>
         <div class="stat">
           <span class="stat-number">2+</span>
-          <span class="stat-label">Active Client</span>
-        </div>
-        <div class="stat">
-          <span class="stat-number">100%</span>
-          <span class="stat-label">Focused on Local Businesses and E-commerce</span>
-        </div>
-        <div class="stat">
-          <span class="stat-number">3</span>
-          <span class="stat-label">Core Services Offered</span>
+          <span class="stat-label">Active Client Accounts</span>
         </div>
       </div>
     </div>
@@ -328,52 +362,58 @@
       </div>
     </div>
   </section>
+
   <!-- SECTION 5.5: TOOLS -->
-<section id="tools" class="section">
-  <div class="container">
-    <h2>Tools I Use</h2>
-    <div class="industries-grid">
-      <span class="industry-tag"><img src="https://www.google.com/s2/favicons?domain=ads.google.com&sz=32" alt="" style="width:16px; vertical-align:middle; margin-right:6px; border-radius:3px;">Google Ads</span>
-      <span class="industry-tag"><img src="https://www.google.com/s2/favicons?domain=business.facebook.com&sz=32" alt="" style="width:16px; vertical-align:middle; margin-right:6px; border-radius:3px;">Meta Ads Manager</span>
-      <span class="industry-tag"><img src="https://www.google.com/s2/favicons?domain=tagmanager.google.com&sz=32" alt="" style="width:16px; vertical-align:middle; margin-right:6px; border-radius:3px;">Google Tag Manager</span>
-      <span class="industry-tag"><img src="https://www.google.com/s2/favicons?domain=hubspot.com&sz=32" alt="" style="width:16px; vertical-align:middle; margin-right:6px; border-radius:3px;">HubSpot</span>
-      <span class="industry-tag"><img src="https://www.google.com/s2/favicons?domain=linkedin.com&sz=32" alt="" style="width:16px; vertical-align:middle; margin-right:6px; border-radius:3px;">LinkedIn Sales Navigator</span>
-      <span class="industry-tag"><img src="https://www.google.com/s2/favicons?domain=sheets.google.com&sz=32" alt="" style="width:16px; vertical-align:middle; margin-right:6px; border-radius:3px;">Google Sheets</span>
-      <span class="industry-tag"><img src="https://www.google.com/s2/favicons?domain=docs.google.com&sz=32" alt="" style="width:16px; vertical-align:middle; margin-right:6px; border-radius:3px;">Google Docs</span>
-      <span class="industry-tag"><img src="https://www.google.com/s2/favicons?domain=maps.google.com&sz=32" alt="" style="width:16px; vertical-align:middle; margin-right:6px; border-radius:3px;">Google Maps</span>
-      <span class="industry-tag"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Microsoft_Office_Excel_(2025%E2%80%93present).svg" alt="" style="width:16px; vertical-align:middle; margin-right:6px; border-radius:3px;">Excel</span>
-      <span class="industry-tag"><img src="https://www.google.com/s2/favicons?domain=gohighlevel.com&sz=32" alt="" style="width:16px; vertical-align:middle; margin-right:6px; border-radius:3px;">GoHighLevel (GHL)</span>
-      <span class="industry-tag"><img src="https://www.google.com/s2/favicons?domain=apollo.io&sz=32" alt="" style="width:16px; vertical-align:middle; margin-right:6px; border-radius:3px;">Apollo.io</span>
-      <span class="industry-tag"><img src="https://www.google.com/s2/favicons?domain=chrome.google.com&sz=32" alt="" style="width:16px; vertical-align:middle; margin-right:6px; border-radius:3px;">Instant Data Scraper</span>
-      <span class="industry-tag"><img src="https://www.google.com/s2/favicons?domain=outscraper.com&sz=32" alt="" style="width:16px; vertical-align:middle; margin-right:6px; border-radius:3px;">Outscraper</span>
-      <span class="industry-tag"><img src="https://www.google.com/s2/favicons?domain=ads.google.com&sz=32" alt="" style="width:16px; vertical-align:middle; margin-right:6px; border-radius:3px;">Google Keyword Planner</span>
+  <section id="tools" class="section">
+    <div class="container">
+      <h2>Tools I Use</h2>
+      <div class="industries-grid">
+        <span class="industry-tag"><img src="https://www.google.com/s2/favicons?domain=ads.google.com&sz=32" alt="" style="width:16px; vertical-align:middle; margin-right:6px; border-radius:3px;">Google Ads</span>
+        <span class="industry-tag"><img src="https://www.google.com/s2/favicons?domain=business.facebook.com&sz=32" alt="" style="width:16px; vertical-align:middle; margin-right:6px; border-radius:3px;">Meta Ads Manager</span>
+        <span class="industry-tag"><img src="https://www.google.com/s2/favicons?domain=tagmanager.google.com&sz=32" alt="" style="width:16px; vertical-align:middle; margin-right:6px; border-radius:3px;">Google Tag Manager</span>
+        <span class="industry-tag"><img src="https://www.google.com/s2/favicons?domain=hubspot.com&sz=32" alt="" style="width:16px; vertical-align:middle; margin-right:6px; border-radius:3px;">HubSpot</span>
+        <span class="industry-tag"><img src="https://www.google.com/s2/favicons?domain=linkedin.com&sz=32" alt="" style="width:16px; vertical-align:middle; margin-right:6px; border-radius:3px;">LinkedIn Sales Navigator</span>
+        <span class="industry-tag"><img src="https://www.google.com/s2/favicons?domain=sheets.google.com&sz=32" alt="" style="width:16px; vertical-align:middle; margin-right:6px; border-radius:3px;">Google Sheets</span>
+        <span class="industry-tag"><img src="https://www.google.com/s2/favicons?domain=docs.google.com&sz=32" alt="" style="width:16px; vertical-align:middle; margin-right:6px; border-radius:3px;">Google Docs</span>
+        <span class="industry-tag"><img src="https://www.google.com/s2/favicons?domain=maps.google.com&sz=32" alt="" style="width:16px; vertical-align:middle; margin-right:6px; border-radius:3px;">Google Maps</span>
+        <!-- NOTE: Excel icon still showing outdated style last time you checked — unresolved -->
+        <span class="industry-tag"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Microsoft_Office_Excel_(2025%E2%80%93present).svg" alt="" style="width:16px; vertical-align:middle; margin-right:6px; border-radius:3px;">Excel</span>
+        <span class="industry-tag"><img src="https://www.google.com/s2/favicons?domain=gohighlevel.com&sz=32" alt="" style="width:16px; vertical-align:middle; margin-right:6px; border-radius:3px;">GoHighLevel (GHL)</span>
+        <span class="industry-tag"><img src="https://www.google.com/s2/favicons?domain=apollo.io&sz=32" alt="" style="width:16px; vertical-align:middle; margin-right:6px; border-radius:3px;">Apollo.io</span>
+        <span class="industry-tag"><img src="https://www.google.com/s2/favicons?domain=chrome.google.com&sz=32" alt="" style="width:16px; vertical-align:middle; margin-right:6px; border-radius:3px;">Instant Data Scraper</span>
+        <span class="industry-tag"><img src="https://www.google.com/s2/favicons?domain=outscraper.com&sz=32" alt="" style="width:16px; vertical-align:middle; margin-right:6px; border-radius:3px;">Outscraper</span>
+        <span class="industry-tag"><img src="https://www.google.com/s2/favicons?domain=ads.google.com&sz=32" alt="" style="width:16px; vertical-align:middle; margin-right:6px; border-radius:3px;">Google Keyword Planner</span>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+
   <!-- SECTION 6: OTHER SERVICES -->
   <section id="other-services" class="section">
-  <div class="container">
-    <h2>Other Skills</h2>
-    <div class="other-grid">
-      <div class="other-tag">Data Entry</div>
-      <div class="other-tag">Excel Data Cleaning</div>
-      <div class="other-tag">CRM Management (HubSpot)</div>
-      <div class="other-tag">HubSpot Pipeline Setup</div>
-      <div class="other-tag">GHL Setup</div>
-      <div class="other-tag">GHL Workflow Automation</div>
-      <div class="other-tag">Landing Page Tracking</div>
-      <div class="other-tag">CRM Integration</div>
+    <div class="container">
+      <h2>Other Skills</h2>
+      <div class="other-grid">
+        <div class="other-tag">Data Entry</div>
+        <div class="other-tag">Excel Data Cleaning</div>
+        <div class="other-tag">CRM Management (HubSpot)</div>
+        <div class="other-tag">HubSpot Pipeline Setup</div>
+        <div class="other-tag">GHL Setup</div>
+        <div class="other-tag">GHL Workflow Automation</div>
+        <div class="other-tag">Landing Page Tracking</div>
+        <div class="other-tag">CRM Integration</div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- SECTION 7: CONTACT -->
+  <!-- UPDATED: Added a placeholder "Book a Call" button — replace the "#" href with a real Calendly 
+       link once you set one up. -->
   <section id="contact" class="section alt-bg">
     <div class="container">
       <h2>Let's Work Together</h2>
       <p>Tired of traffic that doesn't convert? Let's fix that.</p>
       <div class="contact-links">
-        <a href="mailto:cmantana51@gmail.com" class="btn">Email Me</a>
+        <a href="#" target="_blank" class="btn">Book a Call</a>
+        <a href="mailto:cmantana51@gmail.com" class="btn btn-outline">Email Me</a>
         <a href="https://www.linkedin.com/in/christian-mantana-493977361" target="_blank" class="btn btn-outline">LinkedIn</a>
         <a href="https://wa.me/639526027398" target="_blank" class="btn btn-outline">WhatsApp Me</a>
       </div>
