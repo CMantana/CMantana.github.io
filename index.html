@@ -108,6 +108,7 @@
         <a href="javascript:void(0)" class="work-card" onclick="toggleCase('case-hubspot')">HubSpot Pipeline Setup</a>
         <a href="javascript:void(0)" class="work-card" onclick="toggleCase('case-pmax')">Performance Max Campaign Build</a>
         <a href="javascript:void(0)" class="work-card" onclick="toggleCase('case-crosstest')">Meta Ads Creative Cross-Testing</a>
+        <a href="javascript:void(0)" class="work-card" onclick="toggleCase('case-retarget')">Meta Retargeting Campaign</a>
       </div>
       <p class="works-note">*Click a project to see how it was built.</p>
 
@@ -304,6 +305,87 @@
         </p>
         <img src="crosstest-blurred.png" alt="Meta Ads cross-format creative testing" class="case-study-img">
       </div>
+      <div class="case-study" id="case-retarget" style="display:none;">
+        <h3>HVAC Client: Meta Retargeting Campaign <em>(Live, Monitoring Results)</em></h3>
+
+        <p>
+          The Search campaign was working. The prospecting ads on Meta were working. Traffic was 
+          showing up. But somewhere between "clicked the ad" and "booked the $47 diagnostic," 
+          people were disappearing. Not converting, not bouncing off the site angry, just... 
+          leaving. Browsing, thinking about it, closing the tab.
+        </p>
+        <p>
+          That's not a lost customer. That's a warm one who needed one more nudge at the right 
+          moment. So I set out to build a campaign whose entire job was catching that person on 
+          their way back out the door.
+        </p>
+
+        <h4>Step 1: Setting the Foundation</h4>
+        <p>
+          I named it plainly, "47 Diagnostic Retargeting Campaign," set the objective to Leads, and 
+          let the budget auto-distribute across ad sets so Meta could chase the best opportunities 
+          instead of me guessing which one would win. $20 a day. Nothing flashy. This wasn't the 
+          campaign that needed a big budget, it needed a smart audience.
+        </p>
+        <img src="retarget-campaign-setup.png" alt="Meta retargeting campaign objective and budget setup" class="case-study-img">
+        <img src="retarget-structure.png" alt="Campaign structure showing four ad variants" class="case-study-img">
+
+        <h4>Step 2: Making Sure It Actually Counted as a Lead</h4>
+        <p>
+          A retargeting campaign that can't tell a real lead from a random click is just burning 
+          money with extra steps. Before touching audiences or creative, I locked down the 
+          conversion setup, website and calls as the conversion location, the "Lead" event tied 
+          to the correct dataset, Maximize Conversions as the goal. If this worked, I needed to 
+          actually know it worked.
+        </p>
+        <img src="retarget-adset-conversion.png" alt="Ad set conversion and dataset configuration" class="case-study-img">
+
+        <h4>Step 3: The Part That Actually Makes It Retargeting</h4>
+        <p>
+          Here's where most of the thinking went. I built a custom audience of everyone who'd 
+          visited the website in the last 30 days, real people, already familiar with the brand, 
+          already halfway there. Then came the part that's easy to skip and expensive to skip: I 
+          excluded anyone who'd already converted into a lead in that same window.
+        </p>
+        <p>
+          Without that exclusion, the campaign keeps showing "come back and book!" ads to someone 
+          who already booked. That's wasted spend at best, and an annoyed customer at worst. Include 
+          the right people, exclude the ones who already said yes, that's the whole engine.
+        </p>
+        <h5>Audience Setup: Include Site Visitors, Exclude Existing Leads</h5>
+        <img src="retarget-audience-logic.png" alt="Meta custom audience setup for retargeting campaign" class="case-study-img">
+
+        <p>
+          Geo-targeting stayed tight too, a 50-mile radius across the DFW suburbs the business 
+          actually serves. No point retargeting someone three states away who happened to land on 
+          the site once.
+        </p>
+        <img src="retarget-geo-targeting.png" alt="Geo-targeting radius across DFW service area" class="case-study-img">
+
+        <h4>Step 4: Talking to a Warm Audience Differently Than a Cold One</h4>
+        <p>
+          Someone seeing this business for the first time needs convincing. Someone who already 
+          visited the site three days ago just needs a reason to finish what they started. Those 
+          are two different conversations, so I wrote two different creative angles.
+        </p>
+        <p>
+          Four ad variations went out: two videos leaning into urgency ("your AC has been making 
+          that noise") and two static ads leaning into social proof ("165+ homeowners already know 
+          what to expect"). Every line of copy across all four dropped the cold-audience hooks 
+          entirely and leaned straight into familiarity, "you've seen us before," "still haven't 
+          booked?", "remember those reviews?" This wasn't an introduction. It was a reminder.
+        </p>
+        <img src="retarget-ad-preview-redacted.png" alt="Retargeting ad creative preview" class="case-study-img">
+        <img src="retarget-headline-desc-redacted.png" alt="Headline and description variations for retargeting ads" class="case-study-img">
+
+        <h4>Where It Stands Now</h4>
+        <p>
+          The campaign is live, running quietly alongside the prospecting ads, catching the people 
+          those campaigns brought in but didn't close. The next question is which angle actually 
+          pulls warm traffic back, urgency or trust, video or static, and that's what I'm watching 
+          for now.
+        </p>
+     </div>
     </div>
   </section>
 
@@ -340,7 +422,7 @@
           <span class="stat-label">Qualified B2B Prospects Sourced</span>
         </div>
         <div class="stat">
-          <span class="stat-number">8</span>
+          <span class="stat-number">9</span>
           <span class="stat-label">Campaigns & Systems Built or Diagnosed</span>
         </div>
         <div class="stat">
